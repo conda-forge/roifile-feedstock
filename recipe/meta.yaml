@@ -1,6 +1,6 @@
 {% set name = "roifile" %}
-{% set version = "2020.5.1" %}
-{% set sha256 = "f463d2d4fc1c07873b5eab5d068888a6d3d53aaa9a45f042e02f8d902eb376dc" %}
+{% set version = "2020.5.28" %}
+{% set sha256 = "80fdc572e2de5845b82e4470d52b7e5ae25f18a5cd38573df6af90c3b5e38bef" %}
 
 package:
   name: {{ name|lower }}
@@ -13,7 +13,7 @@ source:
 
 build:
   number: 0
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
+  script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
   noarch: python
   entry_points:
     - roifile = roifile.roifile:main
@@ -37,7 +37,7 @@ about:
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE
-  summary: 'Read and write ImageJ ROI format.'
+  summary: Read and write ImageJ ROI format.
   description: |
     Roifile is a Python library to read, write, create, and plot ImageJ ROIs, an undocumented and ImageJ application specific format to store regions of interest, geometric shapes, paths, text, and whatnot for image overlays.
   doc_url: https://github.com/cgohlke/roifile
