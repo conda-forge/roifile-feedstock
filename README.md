@@ -5,7 +5,7 @@ Home: https://github.com/cgohlke/roifile
 
 Package license: BSD-3-Clause
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Read and write ImageJ ROI format.
 
