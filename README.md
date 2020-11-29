@@ -5,9 +5,13 @@ Home: https://github.com/cgohlke/roifile
 
 Package license: BSD-3-Clause
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/roifile-feedstock/blob/master/LICENSE.txt)
 
 Summary: Read and write ImageJ ROI format.
+
+Development: https://github.com/cgohlke/roifile
+
+Documentation: https://github.com/cgohlke/roifile
 
 Roifile is a Python library to read, write, create, and plot ImageJ ROIs, an undocumented and ImageJ application specific format to store regions of interest, geometric shapes, paths, text, and whatnot for image overlays.
 
