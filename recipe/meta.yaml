@@ -1,6 +1,6 @@
 {% set name = "roifile" %}
-{% set version = "2021.6.6" %}
-{% set sha256 = "4302510df818f0f857b4cd87037c2d1ed8f53ec2e6d9a7beae1750a70a435042" %}
+{% set version = "2022.2.2" %}
+{% set sha256 = "9c31f205c2fe6524b71e680e66bac9b7bfd4c67ad4b6b0d25c6b7f1b786ae9a6" %}
 
 package:
   name: {{ name|lower }}
@@ -20,11 +20,11 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.8
     - pip
   run:
-    - python >=3.6
-    - numpy >=1.15.1
+    - python >=3.8
+    - numpy >=1.19.2
 
 test:
   imports:
