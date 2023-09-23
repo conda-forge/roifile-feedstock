@@ -1,11 +1,11 @@
-About roifile
-=============
+About roifile-feedstock
+=======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/roifile-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/cgohlke/roifile
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/roifile-feedstock/blob/main/LICENSE.txt)
 
 Summary: Read and write ImageJ ROI format.
 
