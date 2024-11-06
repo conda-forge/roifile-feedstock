@@ -1,6 +1,6 @@
 {% set name = "roifile" %}
-{% set version = "2024.5.24" %}
-{% set sha256 = "93ea279457e174aa4ad7adf872c34ef46d25e29ef87753b356a27ece825157a2" %}
+{% set version = "2024.9.15" %}
+{% set sha256 = "5a4e6925bec15c1d9e2805601176eeabc0be808f5a6e77b62bb67776116f8f3c" %}
 
 package:
   name: {{ name|lower }}
