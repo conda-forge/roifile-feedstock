@@ -1,14 +1,14 @@
 {% set name = "roifile" %}
-{% set version = "2024.5.24" %}
-{% set sha256 = "93ea279457e174aa4ad7adf872c34ef46d25e29ef87753b356a27ece825157a2" %}
+{% set version = "2025.5.10" %}
+{% set sha256 = "8e5d1f799695ac59f52d4d62bb9016de74ef2493b4d83e24ce7fb25e19f53cce" %}
+{% set python_min = "3.10" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
@@ -20,27 +20,29 @@ build:
 
 requirements:
   host:
-    - python >=3.8
     - pip
+    - python {{ python_min }}
+    - setuptools
   run:
-    - python >=3.8
-    - numpy >=1.19.2
+    - numpy
+    - python >={{ python_min }}
 
 test:
   imports:
     - roifile
   commands:
-    - roifile
+    - pip check
+  requires:
+    - pip
+    - python {{ python_min }}
 
 about:
-  home: https://github.com/cgohlke/roifile
+  home: https://www.cgohlke.com/
+  summary: Read and write ImageJ ROI format
   license: BSD-3-Clause
-  license_family: BSD
   license_file: LICENSE
-  summary: Read and write ImageJ ROI format.
   description: |
     Roifile is a Python library to read, write, create, and plot ImageJ ROIs, an undocumented and ImageJ application specific format to store regions of interest, geometric shapes, paths, text, and whatnot for image overlays.
-  doc_url: https://github.com/cgohlke/roifile
   dev_url: https://github.com/cgohlke/roifile
 
 extra:
