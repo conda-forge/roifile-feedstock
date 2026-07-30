@@ -1,7 +1,7 @@
 {% set name = "roifile" %}
 {% set version = "2026.7.30" %}
 {% set sha256 = "9da29d1ef8088522636e951c93a634a41308f03392c3c96e24f5371491807a41" %}
-{% set python_min = "3.11" %}
+{% set python_min = "3.12" %}
 
 package:
   name: {{ name|lower }}
