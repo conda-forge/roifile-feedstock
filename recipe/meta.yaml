@@ -1,6 +1,6 @@
 {% set name = "roifile" %}
-{% set version = "2026.7.30" %}
-{% set sha256 = "9da29d1ef8088522636e951c93a634a41308f03392c3c96e24f5371491807a41" %}
+{% set version = "2026.9.22" %}
+{% set sha256 = "ba1de699dbabef664564cba6c021c2a01b47437d95b17d6ecf78287f46ef1a54" %}
 {% set python_min = "3.12" %}
 
 package:
@@ -8,7 +8,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
